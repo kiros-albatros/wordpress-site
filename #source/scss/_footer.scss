@@ -1,0 +1,54 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 20px;
+
+    &__copyright {
+        font-size: 1rem;
+    }
+
+    &__social-list {
+        width: 150px;
+        display: flex;
+        justify-content: space-between;
+
+        @include media-mobile {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__social-link {
+        display: block;
+        width: 25px;
+        height: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        &--insta {
+            background-image: url('../images/insta.png');
+        }
+
+        &--vk {
+            background-image: url('../images/vk.png');
+        }
+
+        &--telegram {
+            background-image: url('../images/t.png');
+        }
+
+        &--whatsapp {
+            background-image: url('../images/wh.png');
+        }
+    }
+
+    @include media-mobile {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}

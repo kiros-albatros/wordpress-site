@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Playfair';
+  src: url('../fonts/PlayfairDisplay-VariableFont_wght.ttf');
+}
+
+@import 'normalize';
+@import 'variables';
+@import 'mixins';
+@import 'scaffolding';
+@import 'header';
+@import 'footer';
+//@import 'swiper/css/bundle';
+@import 'slider';
+@import 'about';
+@import 'album';

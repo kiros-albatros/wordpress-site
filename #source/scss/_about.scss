@@ -1,0 +1,55 @@
+.about {
+    text-transform: none;
+
+    &__author {
+        display: flex;
+        justify-content: space-between;
+
+        @include media-mobile {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__author-description {
+        flex-basis: 45%;
+    }
+
+    &__author-container {
+        flex-basis: 45%;
+
+        @include media-mobile {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__feedback {
+        margin-top: 40px;
+
+        @include media-mobile {
+            margin-top: 20px;
+        }
+    }
+
+    &__feedback-title {
+        text-transform: uppercase;
+        font-size: 1.7rem;
+    }
+
+    &__feedback-item {
+        margin-bottom: 20px;
+
+        @include media-mobile {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__feedback-name {
+        font-size: 1.3rem;
+        //    font-weight: 600;
+        margin-bottom: 10px;
+
+        @include media-mobile {
+            margin-bottom: 5px;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.album {
+
+    &__description {
+        margin-bottom: 20px;
+        text-transform: none;
+    }
+
+    .wp-block-gallery.has-nested-images figure.wp-block-image:not(#individual-image) {
+
+        @include media-mobile {
+            margin: 0;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+    }
+}

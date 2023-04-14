@@ -1,0 +1,57 @@
+html {
+  font-size: $font-size;
+  font-family: $font-family;
+  background: $background-color;
+  color: $font-color;
+  line-height: 1.4;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+
+  @include media-mobile {
+    font-size: 8px;
+  }
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 1.2rem;
+
+  @media(max-width: 1500px) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @include media-mobile {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+main {
+  flex: 1 1 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: $font-color;
+}
+
+.page-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  @include media-mobile {
+    margin-top: 0;
+  }
+}
